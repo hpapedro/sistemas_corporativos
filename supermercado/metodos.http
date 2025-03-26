@@ -1,0 +1,13 @@
+##PRODUTOS
+GET http://localhost:3000/produtos
+
+### Adicionando um produto
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+    "nome": "Nescau",
+    "preco": 100.00,
+    "dataValidade": "2026-03-10",
+    "quantidadeEstoque": 300
+}
