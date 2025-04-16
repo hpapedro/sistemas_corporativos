@@ -50,7 +50,7 @@ const produtos = [
 app.post('/login', (req, res) => {
   const {usuario, senha} = req.body;
 
-  if (usuario == 'admin' && senha == '1234'){
+  if (usuario === 'admin' && senha === '1234'){
     const token = jwt.sign({ usuario }, SECRET_KEY, {
       expiresIn: '1h',
     });
